@@ -2,12 +2,11 @@
 
 /*general styling*/
 
+
 body {
     font-family: 'Abel', sans-serif;
     text-align: center;
     font-size: 1rem;
-
-    padding: 0%;
 
     background: linear-gradient(olive, yellow) no-repeat;
 }
@@ -63,6 +62,38 @@ h1 {
     color: white;
 
 }
+
+/* game section */
+
+#game-logo {
+    height: 15rem;
+    width: 15rem;
+    padding-bottom: 5rem;
+}
+
+.game-section {
+    width: 80vw;
+    height: 70vh;
+    max-width: 80%;
+
+    background-color: olive;
+    box-shadow: 0 0 6px 5px black;
+    border-radius: 2rem;
+
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* score section */
+
+.score-area {
+    font-family: ;
+}
+
+
 
 /* footer */
 
