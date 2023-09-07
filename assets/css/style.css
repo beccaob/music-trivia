@@ -5,16 +5,16 @@
 body {
     font-family: 'Abel', sans-serif;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1rem;
 
     padding: 0%;
 
-    background: linear-gradient(olive, yellow);
+    background: linear-gradient(olive, yellow) no-repeat;
 }
 
 h1 {
     font-family: 'Boogaloo', sans-serif;
-    font-size: 8rem;
+    font-size: 6rem;
     text-align: center;
 }
 
@@ -26,6 +26,8 @@ h1 {
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
+
+    padding: 0%;
 }
 
 /* resizes just logo image and not whole div */
@@ -35,6 +37,12 @@ h1 {
     width: 15rem;
 }
 
-/* welcome section */
+/* footer */
 
-.welcome h1 {}
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
