@@ -90,9 +90,67 @@ h1 {
 /* score section */
 
 .score-area {
-    font-family: ;
+    font-family: 'Abel', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
+.game-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#question-text {
+    font-family: 'Boogaloo', sans-serif;
+    font-size: 3rem;
+
+    padding: 2rem;
+}
+
+.answer-options {
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+}
+
+.btn {
+    font-family: 'Abel', sans-serif;
+    font-size: 1.6rem;
+
+    background-color: black;
+    color: white;
+
+    border-radius: 1rem;
+    padding: .9rem;
+    margin-bottom: 1rem;
+
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    cursor: pointer;
+    /* shows difference between clickable and non clickable elements */
+}
+
+.btn:hover {
+    background-color: yellow;
+    color: black;
+}
+
+.restart-btn {
+    height: 35px;
+    width: 55px;
+    font-size: 16px;
+
+}
+
+/* hides elements on page when class is added to element */
+
+.hide {
+    display: none;
+}
 
 
 /* footer */
