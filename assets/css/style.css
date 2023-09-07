@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Boogaloo&display=swap');
+
+/*general styling*/
+
+body {
+    font-family: 'Abel', sans-serif;
+    text-align: center;
+    font-size: 2rem;
+
+    padding: 0%;
+
+    background: linear-gradient(olive, yellow);
+}
+
+h1 {
+    font-family: 'Boogaloo', sans-serif;
+    font-size: 8rem;
+    text-align: center;
+}
+
+/* logo */
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* resizes just logo image and not whole div */
+
+#logo {
+    height: 15rem;
+    width: 15rem;
+}
+
+/* welcome section */
+
+.welcome h1 {}
