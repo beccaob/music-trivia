@@ -1,4 +1,4 @@
-// divs & buttons from html 
+// elements from html 
 
 const restartBtn = document.getElementById('restart');
 const nextBtn = document.getElementById('next');
@@ -19,191 +19,71 @@ var currentScore = 0;
 
 // quiz questions 
 
-let questions = {
+let questions = [
     {
-    question: "The Beatles' 'Yellow Submarine' was released as a single.",
-    answers: [
-        {option: 'True', answer:true}
-        {option: 'False', answer:false}
-    ]
+        question: "The Beatles' 'Yellow Submarine' was released as a single.",
+        answers: [
+            { option: "True", answer: true },
+            { option: "False", answer: false }
+        ]
     },
-
     {
-    question: "The Beatles' 'Yellow Submarine' was released as a single.",
-    answers: [
-        {option: 'True', answer:true}
-        {option: 'False', answer:false}
-    ]
+        question: "The Beatles' 'Yellow Submarine' was released as a single.",
+        answers: [
+            { option: "True", answer: true },
+            { option: "False", answer: false }
+        ]
     },
-
     {
-    question: "The Beatles' 'Yellow Submarine' was released as a single.",
-    answers: [
-        {option: 'True', answer:true}
-        {option: 'False', answer:false}
-    ]
+        question: "The Beatles' 'Yellow Submarine' was released as a single.",
+        answers: [
+            { option: "True", answer: true },
+            { option: "False", answer: false }
+        ]
     },
+];
 
-    {
-    question: "The Beatles' 'Yellow Submarine' was released as a single.",
-    answers: [
-        {option: 'True', answer:true}
-        {option: 'False', answer:false}
-    ]
-    },
-
-    {
-    question: "The Beatles' 'Yellow Submarine' was released as a single.",
-    answers: [
-        {option: 'True', answer:true}
-        {option: 'False', answer:false}
-    ]
-    },
-
-    {
-    question: "The Beatles' 'Yellow Submarine' was released as a single.",
-    answers: [
-        {option: 'True', answer:true}
-        {option: 'False', answer:false}
-    ]
-    },
-
-    {
-    question: "The Beatles' 'Yellow Submarine' was released as a single.",
-    answers: [
-        {option: 'True', answer:true}
-        {option: 'False', answer:false}
-    ]
-    },
-
-    {
-    question: "The Beatles' 'Yellow Submarine' was released as a single.",
-    answers: [
-        {option: 'True', answer:true}
-        {option: 'False', answer:false}
-    ]
-    },
-
-    {
-    question: "The Beatles' 'Yellow Submarine' was released as a single.",
-    answers: [
-        {option: 'True', answer:true}
-        {option: 'False', answer:false}
-    ]
-    },
-
-    {
-    question: "The Beatles' 'Yellow Submarine' was released as a single.",
-    answers: [
-        {option: 'True', answer:true}
-        {option: 'False', answer:false}
-    ]
-    },
-
-    {
-    question: "The Beatles' 'Yellow Submarine' was released as a single.",
-    answers: [
-        {option: 'True', answer:true}
-        {option: 'False', answer:false}
-    ]
-    },
-
-    {
-    question: "The Beatles' 'Yellow Submarine' was released as a single.",
-    answers: [
-        {option: 'True', answer:true}
-        {option: 'False', answer:false}
-    ]
-    },
-
-    {
-    question: "The Beatles' 'Yellow Submarine' was released as a single.",
-    answers: [
-        {option: 'True', answer:true}
-        {option: 'False', answer:false}
-    ]
-    },
-
-    {
-    question: "The Beatles' 'Yellow Submarine' was released as a single.",
-    answers: [
-        {option: 'True', answer:true}
-        {option: 'False', answer:false}
-    ]
-    },
-
-    {
-    question: "The Beatles' 'Yellow Submarine' was released as a single.",
-    answers: [
-        {option: 'True', answer:true}
-        {option: 'False', answer:false}
-    ]
-    },
-
-    {
-    question: "The Beatles' 'Yellow Submarine' was released as a single.",
-    answers: [
-        {option: 'True', answer:true}
-        {option: 'False', answer:false}
-    ]
-    },
-
-    {
-    question: "The Beatles' 'Yellow Submarine' was released as a single.",
-    answers: [
-        {option: 'True', answer:true}
-        {option: 'False', answer:false}
-    ]
-    },
-
-    {
-    question: "The Beatles' 'Yellow Submarine' was released as a single.",
-    answers: [
-        {option: 'True', answer:true}
-        {option: 'False', answer:false}
-    ]
-    },
-
-    {
-    question: "The Beatles' 'Yellow Submarine' was released as a single.",
-    answers: [
-        {option: 'True', answer:true}
-        {option: 'False', answer:false}
-    ]
-    },
-
-    {
-    question: "The Beatles' 'Yellow Submarine' was released as a single.",
-    answers: [
-        {option: 'True', answer:true}
-        {option: 'False', answer:false}
-    ]
-    },
-
-
-};
-
-// onclick event callers 
+// onclick event listeners 
 
 restartBtn.addEventListener('click',restart);
 submitBtn.addEventListener('click',submit);
 prevBtn.addEventListener('click',previous);
 nextBtn.addEventListener('click',next)
 
-// begin quiz fenuction 
+// begin quiz function 
 
 function beginQuiz() {
     currentQuestion = 0;
     questionText.innerHTML = questions[currentQuestion].question;
     trueBtn.innerHTML = questions[currentQuestion].answers[0].option;
     trueBtn.onclick = () => {
-        let ano=0;
-        if (questions = [currentQuestion].answers[ano].answer){
+        let answerOption=0;
+        if (questions = [currentQuestion].answers[answerOption].answer){
             if (score<3){
                 score++;
-            }
-        }
-    }
-}
+            };
+        };
+        userScore.innerHTML = score;
+        if(currentQuestion<2){
+            next();
+        };
+    };
+    falseBtn.innerHTML = questions[currentQuestion].answers[1].option;
+    falseBtn.onclick = () => {
+        let answerOption=1;
+        if(questions[currentQuestion].answers[answerOption].answer){
+            if(score<3) {
+                score++;
+            };
+        };
+        userScore.innerHTML = score;
+        if(currentQuestion<2){
+            next();
+        };
+    };
+    prevBtn.classList.add('hide');
+};
+
+beginQuiz(); 
 
 
