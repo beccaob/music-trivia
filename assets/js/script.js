@@ -151,8 +151,40 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // next button event listener 
 
-    nextBtn.addEventListener("click", => {
-        if (currentQuestion)
-    })
+    nextBtn.addEventListener("click", () => {
+        if (currentQuestion < questions.length - 1) {
+            currentQuestion++;
+            displayCurrentQuestion();
+        }
+    });
+
+    // submit event listener 
+
+    submitBtn.addEventListener("click", () => {
+        let message = "";
+        if (userScore >= 15 && userScore <= 20) {
+            message = "Wow! You're amazing at this, well done!";
+        } else if (userScore >= 10 && userScore < 15) {
+            message = "You know your music trivia, congratulations!";
+        } else if (userScore <= 10) {
+            message = "Better luck next time!";
+        }
+        // Display the message
+        alert(message);
+    });
+
+    // restart event listener 
+    restartBtn.addEventListener("click", () => {
+        currentQuestion = 0;
+        userScore = 0;
+        shuffleArray(questions); // Shuffle questions again
+        displayCurrentQuestion();
+        updateUserScore();
+    });
+
+    // begin quiz 
+    displayCurrentQuestion();
+    updateUserScore();
+});
 
 
