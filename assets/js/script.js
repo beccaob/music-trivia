@@ -117,7 +117,6 @@ document.addEventListener("DOMContentLoaded", function () {
             questionText.textContent = current.question;
         } else {
             // quiz is over - all questions answered
-            questionText.textContent = "You've finished the quiz!";
             let message = "";
             if (userScore >= 15 && userScore <= 20) {
                 console.log("Wow! You're amazing at this, well done!");
@@ -127,75 +126,44 @@ document.addEventListener("DOMContentLoaded", function () {
                 message = "Better luck next time!";
             }
             // Display the message
-            questionText.textContent = message; 
+            questionText.textContent = message;
         }
     };
 
-        // update user score 
-        function updateUserScore() {
-            userScoreElement.textContent = userScore;
-            endScoreElement.textContent = " / " + questions.length;
-        };
+    // update user score 
+    function updateUserScore() {
+        userScoreElement.textContent = userScore;
+        endScoreElement.textContent = " / " + questions.length;
+    };
 
-        // check users answer 
-        function checkAnswer(userAnswer) {
-            if (currentQuestion < questions.length) {
-                const current = questions[currentQuestion];
-                if (userAnswer === current.answer) {
-                    userScore++;
-                }
-                currentQuestion++;
-                displayCurrentQuestion();
-                updateUserScore();
+    // check users answer 
+    function checkAnswer(userAnswer) {
+        if (currentQuestion < questions.length) {
+            const current = questions[currentQuestion];
+            if (userAnswer === current.answer) {
+                userScore++;
             }
-        };
-
-        // event listeners for true & false buttons 
-        trueBtn.addEventListener("click", () => checkAnswer(true));
-        falseBtn.addEventListener("click", () => checkAnswer(false));
-
-        // prev button event listener 
-        previousBtn.addEventListener("click", () => {
-            if (currentQuestion > 0) {
-                currentQuestion--;
-                displayCurrentQuestion();
-            }
-        });
-
-        // next button event listener 
-
-        nextBtn.addEventListener("click", () => {
-            if (currentQuestion < questions.length - 1) {
-                currentQuestion++;
-                displayCurrentQuestion();
-            }
-        });
-
-        // submit event listener 
-
-        submitBtn.addEventListener("click", () => {
-            let message = "";
-            if (userScore >= 15 && userScore <= 20) {
-                message = "Wow! You're amazing at this, well done!";
-            } else if (userScore >= 10 && userScore < 15) {
-                message = "You know your music trivia, congratulations!";
-            } else if (userScore <= 10) {
-                message = "Better luck next time!";
-            }
-            // Display the message
-            alert(message);
-        });
-
-        // restart event listener 
-        restartBtn.addEventListener("click", () => {
-            currentQuestion = 0;
-            userScore = 0;
-            shuffleArray(questions); // Shuffle questions again
+            currentQuestion++;
             displayCurrentQuestion();
             updateUserScore();
-        });
+        }
+    };
 
-        // begin quiz 
+    // event listeners for true & false buttons 
+    trueBtn.addEventListener("click", () => checkAnswer(true));
+    falseBtn.addEventListener("click", () => checkAnswer(false));
+
+
+    // restart event listener 
+    restartBtn.addEventListener("click", () => {
+        currentQuestion = 0;
+        userScore = 0;
+        shuffleArray(questions); // Shuffle questions again
         displayCurrentQuestion();
         updateUserScore();
     });
+
+    // begin quiz 
+    displayCurrentQuestion();
+    updateUserScore();
+});
