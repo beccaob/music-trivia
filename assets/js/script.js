@@ -11,7 +11,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const nextBtn = document.getElementById("next");
     const submitBtn = document.getElementById("submit");
     const restartBtn = document.getElementById("restart");
-    const startBtn = document.getElementById("start");
 
     let currentQuestion = 0;
     let userScore = 0;
@@ -119,7 +118,18 @@ document.addEventListener("DOMContentLoaded", function () {
         } else {
             // quiz is over - all questions answered
             questionText.textContent = "You've finished the quiz!";
-        };
+            let message = "";
+            if (userScore >= 15 && userScore <= 20) {
+                console.log("Wow! You're amazing at this, well done!");
+            } else if (userScore >= 10 && userScore < 15) {
+                message = "You know your music trivia, congratulations!";
+            } else if (userScore <= 10) {
+                message = "Better luck next time!";
+            }
+            // Display the message
+            questionText.textContent = message; 
+        }
+    };
 
         // update user score 
         function updateUserScore() {
