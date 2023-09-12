@@ -98,5 +98,61 @@ document.addEventListener("DOMContentLoaded", function () {
     const submitBtn = document.getElementById("submit");
     const restartBtn = document.getElementById("restart");
 
+    // randomises question order 
+    function shuffleArray(array) {
+        for (let i= array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+    };
+
+    shuffleArray(questions);
+
+    // display current questions 
+    function displayCurrentQuestion() {
+        if (currentQuestion < questions.length) {
+            const current = questions[currentQuestion];
+            questionText.textContent = current.question;
+        } else {
+            // quiz is over 
+            questionText.textContent = "You've finished the quiz!";
+        };
+
+    // update user score 
+    function updateUserScore() {
+        userScoreElement.textContent = userScore;
+        endScoreElement.textContent = " / " + questions.length;
+    };
+
+    // check users answer 
+    function checkAnswer(userAnswer) {
+        if (currentQuestion < questions.length) {
+            const current = questions[currentQuestion];
+            if (userAnswer === current.answer) {
+                userScore++;
+            }
+            currentQuestion++;
+            displayCurrentQuestion();
+            updateUserScore();
+        }
+    };
+
+    // event listeners for true & false buttons 
+    trueBtn.addEventListener("click", () => checkAnswer(true));
+    falseBtn.addEventListener("click", () => checkAnswer(false)); 
+
+    // prev button event listener 
+    previousBtn.addEventListener("click", () => {
+        if (currentQuestion > 0) {
+            currentQuestion--;
+            displayCurrentQuestion();
+        }
+    });
+
+    // next button event listener 
+
+    nextBtn.addEventListener("click", => {
+        if (currentQuestion)
+    })
 
 
