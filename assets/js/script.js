@@ -92,6 +92,11 @@ document.addEventListener("DOMContentLoaded", function () {
     const trueBtn = document.getElementById("true");
     const falseBtn = document.getElementById("false");
     const userScoreElement = document.getElementById("user-score");
-    
+    const endScoreElement = document.getElementById("end-score");
+    const previousBtn = document.getElementById("previous");
+    const nextBtn = document.getElementById("next");
+    const submitBtn = document.getElementById("submit");
+    const restartBtn = document.getElementById("restart");
+
 
 
