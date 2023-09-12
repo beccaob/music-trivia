@@ -120,10 +120,19 @@ document.addEventListener("DOMContentLoaded", function () {
             let message = "";
             if (userScore >= 15 && userScore <= 20) {
                 console.log("Wow! You're amazing at this, well done!");
+                // Hide the True and False buttons
+                trueBtn.style.display = "none";
+                falseBtn.style.display = "none";
             } else if (userScore >= 10 && userScore < 15) {
                 message = "You know your music trivia, congratulations!";
+                // Hide the True and False buttons
+                trueBtn.style.display = "none";
+                falseBtn.style.display = "none";
             } else if (userScore <= 10) {
                 message = "Better luck next time!";
+                // Hide the True and False buttons
+                trueBtn.style.display = "none";
+                falseBtn.style.display = "none";
             }
             // Display the message
             questionText.textContent = message;
@@ -158,6 +167,9 @@ document.addEventListener("DOMContentLoaded", function () {
     restartBtn.addEventListener("click", () => {
         currentQuestion = 0;
         userScore = 0;
+        // unhide the True and False buttons
+        trueBtn.style.display = "inline-block";
+        falseBtn.style.display = "inline-block";
         shuffleArray(questions); // Shuffle questions again
         displayCurrentQuestion();
         updateUserScore();
