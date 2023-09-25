@@ -32,4 +32,5 @@ document.addEventListener("DOMContentLoaded", function () {
             alert("Please enter a username to start the game.");
         }
     });
+
 });
