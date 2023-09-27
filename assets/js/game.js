@@ -148,10 +148,12 @@ document.addEventListener("DOMContentLoaded", function () {
         if (currentQuestion < questions.length) {
             const current = questions[currentQuestion];
             if (userAnswer === current.answer) {
+                questionText.textContent = "Correct! Well done."
                 userScore++;
-            }
+            } else {
+                questionText.textContent = `Not quite! The correct answer is ${current.answer ? 'True' : 'False'}.`;
+            };
             currentQuestion++;
-            displayCurrentQuestion();
             updateUserScore();
         }
     };
