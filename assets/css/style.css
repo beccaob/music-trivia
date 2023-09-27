@@ -12,8 +12,9 @@ body {
 
 h1 {
     font-family: 'Boogaloo', sans-serif;
-    font-size: 5rem;
+    font-size: 3.5rem;
     text-align: center;
+    padding-top: 1.5rem;
 }
 
 
@@ -22,7 +23,7 @@ h1 {
 .logo {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 
@@ -33,8 +34,8 @@ h1 {
 /* resizes just logo image and not whole div */
 
 #logo {
-    height: 30rem;
-    width: 30rem;
+    max-height: 20rem;
+    max-width: 20rem;
 }
 
 /* welcome section */
@@ -65,17 +66,21 @@ h1 {
 /*username input */
 
 #username-input {
-    font-size: 2em;
+    font-size: 2rem;
     font-family: 'Abel', sans-serif;
 
     border-radius: 2rem;
 
-    padding: 1rem;
+    padding: .5rem;
 
     background-color: black;
     color: olive;
 
     text-align: center;
+}
+
+::placeholder {
+    font-size: 2rem;
 }
 
 .buttons {
@@ -177,10 +182,14 @@ h1 {
 }
 
 .restart-btn {
-    height: 35px;
-    width: 55px;
-    font-size: 16px;
+    height: 3rem;
+    width: 6rem;
+    font-size: 1.7rem;
 
+}
+
+#submit {
+    margin-top: 2rem;
 }
 
 /* hides elements on page when class is added to element */
