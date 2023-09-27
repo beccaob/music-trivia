@@ -10,8 +10,11 @@ document.addEventListener("DOMContentLoaded", function () {
     const endScoreElement = document.getElementById("end-score");
     const restartBtn = document.getElementById("restart");
 
+
     let currentQuestion = 0;
     let userScore = 0;
+
+    
 
     //questions and answers
     const questions = [
@@ -117,23 +120,22 @@ document.addEventListener("DOMContentLoaded", function () {
             // quiz is over - all questions answered
             let message = "";
             if (userScore >= 15 && userScore <= 20) {
-                message = `Wow, ${username}! You're amazing at this, well done!`;
+                message = `Wow, you scored ${userScore}! You're amazing at this, well done!`;
                 // Hide the True and False buttons
                 trueBtn.style.display = "none";
                 falseBtn.style.display = "none";
             } else if (userScore >= 10 && userScore < 15) {
-                message = `You know your music trivia, ${username}. Congratulations!`;
+                message = `Woohoo! You scored ${userScore}. You know your music trivia! Congratulations!`;
                 // Hide the True and False buttons
                 trueBtn.style.display = "none";
                 falseBtn.style.display = "none";
             } else if (userScore <= 10) {
-                message = "Better luck next time!";
+                message = `Oh no! You scored ${userScore}. Better luck next time!`;
                 // Hide the True and False buttons
                 trueBtn.style.display = "none";
                 falseBtn.style.display = "none";
             }
             // Display the message
-
             feedbackMessage(message);
         }
     };

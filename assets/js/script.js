@@ -1,4 +1,3 @@
-
 // waits for html to load before loading javascript
 document.addEventListener("DOMContentLoaded", function () {
 
@@ -34,3 +33,4 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+
