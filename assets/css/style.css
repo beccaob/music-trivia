@@ -2,7 +2,6 @@
 
 /*general styling*/
 
-
 body {
     font-family: 'Abel', sans-serif;
     text-align: center;
@@ -61,6 +60,42 @@ h1 {
     background-color: olive;
     color: white;
 
+}
+
+/*username input */
+
+#username-input {
+    font-size: 2em;
+    font-family: 'Abel', sans-serif;
+
+    border-radius: 2rem;
+
+    padding: 1rem;
+
+    background-color: black;
+    color: olive;
+
+    text-align: center;
+}
+
+.buttons {
+    font-size: 2rem;
+    font-family: 'Boogaloo', sans-serif;
+
+    border-radius: 1rem;
+
+    margin-top: 1rem;
+    padding: 1rem;
+
+    background-color: olive;
+    color: black;
+}
+
+.buttons:hover {
+    cursor: pointer;
+
+    background-color: black;
+    color: olive;
 }
 
 /* game section */

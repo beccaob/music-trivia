@@ -117,7 +117,7 @@ document.addEventListener("DOMContentLoaded", function () {
             // quiz is over - all questions answered
             let message = "";
             if (userScore >= 15 && userScore <= 20) {
-                console.log("Wow! You're amazing at this, well done!");
+                message = "Wow! You're amazing at this, well done!";
                 // Hide the True and False buttons
                 trueBtn.style.display = "none";
                 falseBtn.style.display = "none";
