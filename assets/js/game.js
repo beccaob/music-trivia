@@ -117,12 +117,12 @@ document.addEventListener("DOMContentLoaded", function () {
             // quiz is over - all questions answered
             let message = "";
             if (userScore >= 15 && userScore <= 20) {
-                message = "Wow! You're amazing at this, well done!";
+                message = `Wow, ${username}! You're amazing at this, well done!`;
                 // Hide the True and False buttons
                 trueBtn.style.display = "none";
                 falseBtn.style.display = "none";
             } else if (userScore >= 10 && userScore < 15) {
-                message = "You know your music trivia, congratulations!";
+                message = `You know your music trivia, ${username}. Congratulations!`;
                 // Hide the True and False buttons
                 trueBtn.style.display = "none";
                 falseBtn.style.display = "none";
@@ -133,7 +133,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 falseBtn.style.display = "none";
             }
             // Display the message
-            questionText.textContent = message;
+
+            feedbackMessage(message);
         }
     };
 
@@ -143,18 +144,24 @@ document.addEventListener("DOMContentLoaded", function () {
         endScoreElement.textContent = " / " + questions.length;
     };
 
+    function feedbackMessage(message) {
+        questionText.textContent = message;
+    };
+
+
     // check users answer 
     function checkAnswer(userAnswer) {
         if (currentQuestion < questions.length) {
             const current = questions[currentQuestion];
             if (userAnswer === current.answer) {
-                questionText.textContent = "Correct! Well done."
+                feedbackMessage("Correct! Well done.");
                 userScore++;
             } else {
-                questionText.textContent = `Not quite! The correct answer is ${current.answer ? 'True' : 'False'}.`;
+                feedbackMessage(`Not quite! The correct answer is ${current.answer ? 'True' : 'False'}.`);
             };
             currentQuestion++;
             updateUserScore();
+            setTimeout(displayCurrentQuestion, 1000); // Delay to display the next question
         }
     };
 
