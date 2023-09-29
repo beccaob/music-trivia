@@ -24,3 +24,25 @@ My site is a music trivia quiz. The aim of this project was to create an interac
 7. As a user, I want to be able to restart the quiz if needed. 
 - There is a reset button which will reset the user score and randomly shuffle the questions again. 
 
+- ### Design 
+    - ### Colour Scheme 
+    I used a olive to yellow gradient colour as I believe the colours go well together and do not cause any contrast errors. 
+    1. Black was used for main text.  
+    4. Black was used for hover background and olive was used for hover text, this allowed the user to confirm that they were hovering over the buttons. 
+ 
+
+    - ### Fonts
+    For the fonts, I used 'Boogaloo' for headings & 'Abel' for regular text, both from Google Fonts. I used 'sans-serif' as a backup should those fonts not be available for all.
+
+    - ### Icons 
+    The icon used in the start button was obtained from Font Awesome. 
+
+    - ### Images
+    The logo image was made on Canva Pro by myself - image soruce in reference section. 
+
+### Wireframes
+I used wireframes to give myself a general idea of what I wanted the site to look like.
+
+[home-page](assets/images/readme-img/home-page-wf.png)
+
+[404-error](assets/images/readme-img/404-wf.png)
