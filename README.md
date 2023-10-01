@@ -97,3 +97,31 @@ Allows user to choose their answer. The button changes colour when the user hove
  3. JavaScript
    
 
+### Programs
+
+1. Balsamiq
+Balsamiq was used to create my wireframes.
+2. Git
+Used for version control, commits and pushing to Github.
+3. Github
+Used for storing my repository, files and images pushed from gitpod.
+4. Code Anywhere
+IDE used.
+5. Chrome Developer Tools
+Used for troubleshooting when needed. Also used to check responsiveness.
+6. Google Fonts
+Used for site fonts.
+7. Font Awesome
+used for icons.
+8. Canva Pro
+Used to create the logo image.
+9. Favicon.io
+Favicon files were created using <https://favicon.io>
+
+## Testing
+
+The W3C Markup Validator, W3C CSS Validator Services and jshint.com were used to validate my project.
+![css](assets/images/readme-img/css-validate.png)
+![html](assets/images/readme-img/html-validate.png)
+
+JS Hint

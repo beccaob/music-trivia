@@ -112,6 +112,7 @@ document.addEventListener("DOMContentLoaded", function () {
     shuffleArray(questions);
 
     // display current questions 
+    //
     function displayCurrentQuestion() {
         if (currentQuestion < questions.length) {
             const current = questions[currentQuestion];
