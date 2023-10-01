@@ -38,11 +38,24 @@ My site is a music trivia quiz. The aim of this project was to create an interac
     The icon used in the start button was obtained from Font Awesome. 
 
     - ### Images
-    The logo image was made on Canva Pro by myself - image soruce in reference section. 
+    The logo image was made on Canva Pro by myself - image source in reference section. 
 
 ### Wireframes
 I used wireframes to give myself a general idea of what I wanted the site to look like.
 
 [home-page](assets/images/readme-img/home-page-wf.png)
+[gamearea](assets/images/readme-img/game-wf.png)
 
-[404-error](assets/images/readme-img/404-wf.png)
+## Features
+
+- ### Logo Image
+
+ Contains title & description of the game.
+
+ !logo](assets/images/readme-img/logo.png)
+
+- ### Username Input
+
+ Allows user to enter their name. If a name is not entered - an error alert will display asking the user to choose a name before continuing. Once the name has been selected - the user is welcomed by their name and asked if they would like to begin the game.
+
+ ![username](assets/images/readme-img/username.png)
