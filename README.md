@@ -59,3 +59,34 @@ I used wireframes to give myself a general idea of what I wanted the site to loo
  Allows user to enter their name. If a name is not entered - an error alert will display asking the user to choose a name before continuing. Once the name has been selected - the user is welcomed by their name and asked if they would like to begin the game.
 
  ![username](assets/images/readme-img/username.png)
+
+- ### Start Button
+
+Allows user to start the game. This button loads the game.js file. Functions are explained in the fuctions section below. The button text italicises when the user hovers over it so they know its a clickable button.
+
+ ![start-btn](assets/images/readme-img/start.png)
+
+- ### Question Text
+
+ This area displays the game questions which are captured from the game.js file.
+
+ ![question](assets/images/readme-img/question.png)
+
+- ### True & False Buttons
+
+Allows user to choose their answer. The button changes colour when the user hovers over it so they know its a clickable button.
+
+ ![true-false](assets/images/readme-img/truefalse.png)
+
+- ### Restart
+
+ This button will allow the user to restart the game at any time. The background colour and text colour will change if this button is hovered over so the user knows they can click it.
+
+ ![restart](assets/images/readme-img/restart.png)
+
+- ### User Score
+
+ The user score is displayed over the question text. Once all questions are answered - the score is also displayed along with a message depending on the score gained.
+
+ ![score](assets/images/readme-img/score.png)
+
