@@ -8,6 +8,8 @@ body {
     font-size: 1rem;
 
     background: linear-gradient(olive, yellow) no-repeat;
+
+    min-height: 100vh;
 }
 
 h1 {
@@ -44,23 +46,27 @@ h1 {
     margin-top: -20px;
 }
 
-.start {
+#start {
     font-family: 'Boogaloo', sans-serif;
     font-size: 2rem;
 
     border-radius: 2rem;
     padding: .7rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
 
     background-color: black;
-    color: white;
+}
+
+#start a {
+    color: olive;
+    text-decoration: none;
 }
 
 /* change background color on hover */
 
-.start:hover {
-    background-color: olive;
-    color: white;
-
+#start a:hover {
+    font-style: italic;
 }
 
 /*username input */
@@ -111,7 +117,7 @@ h1 {
     padding-bottom: 5rem;
 }
 
-.game-section { 
+.game-section {
     width: 80vw;
     height: 70vh;
     max-width: 80%;
@@ -190,12 +196,6 @@ h1 {
 
 #submit {
     margin-top: 2rem;
-}
-
-/* hides elements on page when class is added to element */
-
-.hide {
-    display: none;
 }
 
 
