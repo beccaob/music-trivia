@@ -90,3 +90,10 @@ Allows user to choose their answer. The button changes colour when the user hove
 
  ![score](assets/images/readme-img/score.png)
 
+## Technologies used
+ ### Languages
+ 1. HTML
+ 2. CSS
+ 3. JavaScript
+   
+
