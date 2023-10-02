@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const j = Math.floor(Math.random() * (i + 1));
             [array[i], array[j]] = [array[j], array[i]];
         }
-    };
+    }
 
     shuffleArray(questions);
 
@@ -139,17 +139,17 @@ document.addEventListener("DOMContentLoaded", function () {
             // Display the message
             feedbackMessage(message);
         }
-    };
+    }
 
     // update user score 
     function updateUserScore() {
         userScoreElement.textContent = userScore;
         endScoreElement.textContent = " / " + questions.length;
-    };
+    }
 
     function feedbackMessage(message) {
         questionText.textContent = message;
-    };
+    }
 
 
     // check users answer 
@@ -161,12 +161,12 @@ document.addEventListener("DOMContentLoaded", function () {
                 userScore++;
             } else {
                 feedbackMessage(`Not quite! The correct answer is ${current.answer ? 'True' : 'False'}.`);
-            };
+            }
             currentQuestion++;
             updateUserScore();
             setTimeout(displayCurrentQuestion, 1000); // Delay to display the next question
         }
-    };
+    }
 
 
     // event listeners for true & false buttons 

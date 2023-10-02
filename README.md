@@ -124,4 +124,16 @@ The W3C Markup Validator, W3C CSS Validator Services and jshint.com were used to
 ![css](assets/images/readme-img/css-validate.png)
 ![html](assets/images/readme-img/html-validate.png)
 
-JS Hint
+Js Hint
+
+1. script.js 
+   No errors encountered. One undefined document - this is referencing the dom. 
+![script-js-hint](assets/images/readme-img/scriptjshint.png)
+
+2. game.js
+    Encountered six errors on inital test. See screenshot below: 
+![game-js-hint](assets/images/readme-img/jshintgamejs.png)
+
+    This was fixed by removing all unnessery semi-colons. One undefined document - this is referencing the dom.
+![game-js-hint-correct](assets/images/readme-img/gamejshint.png)
+    
