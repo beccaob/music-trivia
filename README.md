@@ -121,16 +121,23 @@ Favicon files were created using <https://favicon.io>
 ## Testing
 
 The W3C Markup Validator, W3C CSS Validator Services and jshint.com were used to validate my project.
-![css](assets/images/readme-img/css-validate.png)
-![html](assets/images/readme-img/html-validate.png)
 
-Js Hint
+### HTML Validation: 
+
+I ran into one error when testing my HTML. Please see screenshot below.
+
+![html-error](assets/images/readme-img/index-error.png)
+
+This was corrected by just using the anchor tag and styling same. When i ran the validator again, it passed with no issues.
+
+
+### Js Hint
 
 1. script.js 
    No errors encountered. One undefined document - this is referencing the dom. 
 ![script-js-hint](assets/images/readme-img/scriptjshint.png)
 
-2. game.js
+1. game.js
     Encountered six errors on inital test. See screenshot below: 
 ![game-js-hint](assets/images/readme-img/jshintgamejs.png)
 

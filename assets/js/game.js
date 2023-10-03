@@ -121,17 +121,17 @@ document.addEventListener("DOMContentLoaded", function () {
             // quiz is over - all questions answered
             let message = "";
             if (userScore >= 15 && userScore <= 20) {
-                message = `Wow, you scored ${userScore}! You're amazing at this, well done!`;
+                message = `Wow, you scored ${userScore} out of 20! You're amazing at this, well done!`;
                 // Hide the True and False buttons
                 trueBtn.style.display = "none";
                 falseBtn.style.display = "none";
             } else if (userScore >= 10 && userScore < 15) {
-                message = `Woohoo! You scored ${userScore}. You know your music trivia! Congratulations!`;
+                message = `Woohoo! You scored ${userScore} out of 20. You know your music trivia! Congratulations!`;
                 // Hide the True and False buttons
                 trueBtn.style.display = "none";
                 falseBtn.style.display = "none";
             } else if (userScore <= 10) {
-                message = `Oh no! You scored ${userScore}. Better luck next time!`;
+                message = `Oh no! You scored ${userScore} out of 20. Better luck next time!`;
                 // Hide the True and False buttons
                 trueBtn.style.display = "none";
                 falseBtn.style.display = "none";
