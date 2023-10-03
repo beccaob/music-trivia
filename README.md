@@ -215,6 +215,47 @@ The site was also tested on the following devices and no issues were detected:
 - Asus 15.6" M509DA-EJ034T
 - HP Pro Desk 400 G6 SFF
 
+## Manual Testing
+
+- Browser Compatibility
+
+Browser | Outcome | Pass/Fail  
+--- | --- | ---
+Google Chrome | No appearance, responsiveness nor functionality issues.| Pass
+Safari | No appearance, responsiveness nor functionality issues. | Pass
+Mozilla Firefox | No Appearance, No responsiveness nor functionality issues.| Pass
+Microsoft Edge | No appearance, responsiveness nor functionality issues. | Pass
+
+- Device compatibility
+
+Device | Outcome | Pass/Fail
+--- | --- | ---
+Iphone13 | No appearance, responsiveness nor functionality issues. | Pass
+Asus 15.6" M509DA-EJ034T | No appearance, responsiveness nor functionality issues. | Pass
+HP Pro Desk 400 G6 SFF | No appearance, responsiveness nor functionality issues. | Pass
+
+- Common Elements Testing
+
+  - index.html
+
+    Feature | Outcome | Pass/Fail
+    --- | --- | ---
+    Logo Image | Link are working as expected. | Pass
+    Username | User can enter username, alert shows if user tries to start the game without one | Pass
+    Submit Button | Shows username and welcome message when clicked | Pass
+    Start Button | Takes user to game.js | Pass
+
+  - game.js
+
+    Feature | Outcome | Pass/Fail
+    --- | --- | ---
+    Questions | Display once game is loaded | Pass
+    True/False Buttons | Change colour when hovering over, correct answer displayed once clicked and vice versa | Pass
+    Correct/Incorrect Message | Displayed when correct/incorrect answer is chosen & next question loads automatically | Pass
+    User Score | Increases when correct answer is chosen | Pass
+    End Of Quiz Message | Displays when all questions are answered & displays user score with relevant message | Pass
+    Restart Button | Restarts the game | Pass
+
 ### Unfixed Bugs 
 As far as I am aware - there are no unfixed bugs in my project. My only issue is with WAVE testing which is mentioned above. 
 
@@ -262,3 +303,20 @@ The project will now be cloned on your local machine.
 1. Log into the Github repository.
 2. Underneath your avatar is a button labelled **Fork**, click this.
 3. You should have your own copy now.
+
+
+### Acknowledgements
+
+1. Slack Community for continued support.
+2. Victor from Stryker programming team for their tips, tricks and support throughout this project.
+3. My family & Partner for their patience, support and understanding.
+4. Myself for perserviering through several function errors and changes, long days, nights and several instances of imposter syndrome.
+
+### Credits 
+
+1. Code Institute course material
+2. JS Cheatsheet [js cheatsheet](https://htmlcheatsheet.com/js/)
+3. Canva Pro for Logo Image 
+    "Mic 3" - Ummi Kalum
+4. [setTimeout Credit](https://www.tutorialspoint.com/How-to-delay-a-JavaScript-function-call-using-JavaScript#:~:text=Whenever%20we%20want%20to%20call,delay%20before%20executing%20a%20function.)
+5. 
