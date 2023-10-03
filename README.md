@@ -214,3 +214,51 @@ The site was also tested on the following devices and no issues were detected:
 - Apple IPhone 13
 - Asus 15.6" M509DA-EJ034T
 - HP Pro Desk 400 G6 SFF
+
+### Unfixed Bugs 
+As far as I am aware - there are no unfixed bugs in my project. My only issue is with WAVE testing which is mentioned above. 
+
+# **Deployment**
+
+The website was created using CodeAnywhere and pushed to the github remote repository 'music-trivia'
+The following git commands were used throughout development to push code to the remote repository:
+
+- git add .
+  - This command was used to add a change in the working directory to the staging area.
+
+- git commit -m "commit message"
+  - This command was used to commit changes to the local repo queue ready to be pushed to the remote repo.
+
+- git push
+  - This command was used to push all committed code to the remote repo on github.
+
+### Deployment to Github Pages
+
+The site was deployed to Github Pages. Steps used are as follows:
+
+1. In the repo, open the settings tab
+2. In left menu, click 'Pages'
+3. From the source section, select 'Branch:main' from the dropdown menu
+4. Click 'Save'
+5. A live link will be displayed in green banner when published successfully
+
+### Clone Repo Code Locally
+
+Navigate to the github repo you want to clone for local use
+
+1. Click the 'Code' drop down menu
+2. Click on 'HTTPS'
+3. Copy the repo link to the keyboard
+4. Open preferred integrated development environment (IDE)
+
+(Git must be installed for the final step)
+
+5. Type git clone copied-git-url into the IDE terminal
+
+The project will now be cloned on your local machine.
+
+### Forking the repository
+
+1. Log into the Github repository.
+2. Underneath your avatar is a button labelled **Fork**, click this.
+3. You should have your own copy now.
