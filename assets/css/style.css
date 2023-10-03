@@ -56,16 +56,14 @@ h1 {
     margin-bottom: 2rem;
 
     background-color: black;
-}
 
-#start a {
     color: olive;
     text-decoration: none;
 }
 
 /* change background color on hover */
 
-#start a:hover {
+#start:hover {
     font-style: italic;
 }
 
