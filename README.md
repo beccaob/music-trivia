@@ -181,5 +181,36 @@ Lighthouse Navigation Testing:
 
 ### WAVE Testing
 
+There are two errors present. 
 
+1. No form label. When I enclosed the username feature in the form element, my quiz was not functioning as desired. I did not have time to fix this issue but I am aware of it and aim to fix it in the future. 
+2. Empty button - this is my submit button. I am unsure of how to fix this issue but I will investigate further in the future. 
 
+![wave-testing](assets/images/readme-img/wave.png)
+
+### Devices
+
+All pages were tested to ensure responsiveness on screen sizes from 320px upwards. Each page was tested on Chrome, Edge, Safari and Firefox.
+
+Steps to test:
+
+1. Open the browser and navigate to [Tune Test](https://beccaob.github.io/music-trivia/index.html)
+2. Open the developer tools ( right click & inspect )
+3. Set to responsive & decrease width to 320px
+4. Set the zoom to 50%
+5. Click & drag window to max width
+
+Expected Outcome:
+- Responsive on all screen sizes, no pixelated/stretched images
+- No horizontal scroll bar
+- No element overflow
+
+Actual Outcome:
+
+The website behaved as expected across all tests.
+
+The site was also tested on the following devices and no issues were detected:
+
+- Apple IPhone 13
+- Asus 15.6" M509DA-EJ034T
+- HP Pro Desk 400 G6 SFF
