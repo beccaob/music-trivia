@@ -43,7 +43,7 @@ My site is a music trivia quiz. The aim of this project was to create an interac
 I used wireframes to give myself a general idea of what I wanted the site to look like.
 
 ![home-page](assets/images/readme-img/home-page-wf.png)
-![gamearea](assets/images/readme-img/game-wf.png)
+![gamearea](assets/images/readme-img/game-page-wf.png)
 
 ## Features
 
@@ -304,6 +304,9 @@ The project will now be cloned on your local machine.
 2. Underneath your avatar is a button labelled **Fork**, click this.
 3. You should have your own copy now.
 
+### Features To Implement 
+1. Levels - easy, medium & hard levels.to test the user. 
+2. Leadboard - Leaderboard using google docs. 
 
 ### Acknowledgements
 
@@ -319,4 +322,3 @@ The project will now be cloned on your local machine.
 3. Canva Pro for Logo Image 
     "Mic 3" - Ummi Kalum
 4. [setTimeout Credit](https://www.tutorialspoint.com/How-to-delay-a-JavaScript-function-call-using-JavaScript#:~:text=Whenever%20we%20want%20to%20call,delay%20before%20executing%20a%20function.)
-5. 
