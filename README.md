@@ -1,4 +1,4 @@
-# Tune test - Musici Trivia Quiz
+# Tune test - Music Trivia Quiz
 [View the live site here](https://beccaob.github.io/music-trivia/)
 
 ## Final Design 
